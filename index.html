@@ -20,7 +20,7 @@
     body {
       font: 20px Helvetica, sans-serif;
       color: #333;
-      padding-top: 100px;
+      padding-top: 2em;
     }
 
     article {
@@ -28,6 +28,10 @@
       text-align: left;
       width: 750px;
       margin: 0 auto;
+      padding: 0 2em 1em 2em;
+      border-radius: 10px;
+      background-color: white;
+      border: lightgrey solid 1px;
     }
 
     a {
@@ -45,26 +49,37 @@
       bottom: 0;
       left: 0;
       right: 0;
-      width: 1100px;
+      width: 750px;
       margin: 0 auto;
+      z-index: -100;
     }
 
     .logo {
-      height: 110px;
-      padding: 15px 0;
+      display: block;
+      width: 300px;
+      margin: 3em auto;
     }
 
     .wrapped-image {
-      height: 100%;
+      width: 100%;
     }
 
     @media only screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      body {
+        padding-top: 0.5em;
+      }
+
       article {
         width: 80%;
+        padding: 0.25em 1em;
       }
 
       #background-image {
-        width: 80%;
+        width: 70%;
       }
     }
   </style>
@@ -73,8 +88,8 @@
 </head>
 
 <body>
+  <div class="logo"><img class="wrapped-image" src="cyclum-renewables.png" /></div>
   <article>
-    <div class="logo"><img class="wrapped-image" src="cyclum-renewables.png" /></div>
     <h1>Website is under construction</h1>
     <div>
       <p>This website is being developed right now and will be available shortly. In the meantime, you can contact Olga
