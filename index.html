@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="/webpack/main.css">
   </head>
 
-  <body class="d-flex flex-column justify-content-between">
+  <body class="d-flex flex-column justify-content-between" data-bs-spy="scroll" data-bs-target=".scrollspy" data-bs-offset="200" tabindex="0">
     <header id="navigation" class="w-100 fixed-top bg-white">
     <div class="container">
-        <div class="row justify-content-between g-0">
+        <div class="row scrollspy justify-content-between g-0">
             
             <a href="#" id="logo-wrapper" class="col-auto d-flex justify-content-end align-items-center large">
                 
@@ -47,52 +47,28 @@
             
             <ul class="desktop-navigation nav col-lg d-flex justify-content-end align-items-center">
                 
-                    
-                        <li class="nav-item">
-                            <a href="/" class="nav-link active">Home</a>
-                        </li>
-                    
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link">About Us</a>
+                </li>
                 
-                    
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="dropdown-industries" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown-industries">
-                                
-                                    <li>
-                                        <a href="/industries/hospitality/" class="dropdown-item">Hospitality</a>
-                                    </li>
-                                
-                                    <li>
-                                        <a href="/industries/biogas/" class="dropdown-item">Biogas</a>
-                                    </li>
-                                
-                                    <li>
-                                        <a href="/industries/zero-emission-trucking/" class="dropdown-item">Zero Emission Trucking</a>
-                                    </li>
-                                
-                            </ul>
-                        </li>
-                    
+                <li class="nav-item">
+                    <a href="#industries" class="nav-link">Industries</a>
+                </li>
                 
-                    
-                        <li class="nav-item">
-                            <a href="/partners/" class="nav-link">Partners</a>
-                        </li>
-                    
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
                 
-                    
-                        <li class="nav-item">
-                            <a href="/projects/" class="nav-link">Projects</a>
-                        </li>
-                    
+                <li class="nav-item">
+                    <a href="#partners-a" class="nav-link">Partners</a>
+                </li>
                 
-                    
-                        <li class="nav-item">
-                            <a href="/contact/" class="nav-link">Contact Us</a>
-                        </li>
-                    
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link">Contact Us</a>
+                </li>
                 
             </ul>
+            
             
             <div class="mobile-navigation col-auto d-flex justify-content-end align-items-center">
                 <div id="mobile-navigation-control" class="btn collapsible-control hamburger-icon mx-3" data-collapsible-target-id="mobile-navigation">
@@ -104,43 +80,6 @@
         </div>
         
         <div id="mobile-navigation" class="collapsible mobile-navigation">
-            
-            <div class="list-group list-group-flush py-3">
-                
-                    
-                        <a href="/" class="list-group-item list-group-item-action active">Home</a>
-                    
-                
-                    
-                        <a class="list-group-item list-group-item-action collapsible-control animated-caret" data-collapsible-target-id="collapse-industries">
-                            Industries<i class="fas fa-caret-down ms-2"></i>
-                        </a>
-                        <div id="collapse-industries" class="collapsible">
-                            <div class="list-group m-3">
-                                
-                                    <a href="/industries/hospitality/" class="list-group-item list-group-item-action">Hospitality</a>
-                                
-                                    <a href="/industries/biogas/" class="list-group-item list-group-item-action">Biogas</a>
-                                
-                                    <a href="/industries/zero-emission-trucking/" class="list-group-item list-group-item-action">Zero Emission Trucking</a>
-                                
-                            </div>
-                        </div>
-                    
-                
-                    
-                        <a href="/partners/" class="list-group-item list-group-item-action">Partners</a>
-                    
-                
-                    
-                        <a href="/projects/" class="list-group-item list-group-item-action">Projects</a>
-                    
-                
-                    
-                        <a href="/contact/" class="list-group-item list-group-item-action">Contact Us</a>
-                    
-                
-            </div>
             
         </div>
     </div>
@@ -158,7 +97,8 @@
     </div>
     
   <div id="content" class="container offset-top">
-    <h2 id="what-we-do">What We Do</h2>
+    <a id="about-us" class="anchor"></a>
+<h2 id="what-we-do">What We Do</h2>
 <p>We offer financing, design, engineering, and sustainability solutions for renewable microgrid system development. We specialize in solar PV microgrids and carbon negative microturbines.</p>
 
 <div style="height: 4rem;"></div>
@@ -185,6 +125,7 @@
 <div style="height: 4rem;"></div>
 
 <div class="separator rellax" data-rellax-speed="-1" data-rellax-percentage="0.65" style="background-color: #e0e3e6; height: 30rem"></div>
+<a id="industries" class="anchor"></a>
 <h2 id="industries-we-serve">Industries We Serve</h2>
 <div class="d-flex flex-column flex-lg-row">
 <div class="industry-item d-flex flex-row flex-lg-column align-items-stretch rounded-3 mx-1 mx-lg-2 my-2 shadow overflow-hidden text-start bg-white">
@@ -217,11 +158,13 @@
 </div>
 
 <div style="height: 4rem;"></div>
+<a id="projects" class="anchor"></a>
 <h2 id="our-newest-projects">Our Newest Projects</h2>
 <p><strong>Hospitality</strong>: Beginning in Q1 of 2021, we have signed a multi-million-dollar with two developing resorts in the U.S. Virgin Islands. We will provide renewable energy powered by our state-of-the-art microgrid technology.</p>
 <p><strong>Biogas</strong>: With our sister company GESS RNG Biogas, Cyclum has been contracted to develop renewable microgrids across the United States that will supply energy to numerous RNG producing biogas plants. With renewable microgrid energy, these plants have an accumulated Carbon Intensity score of -387, the lowest score for a biogas plant in the United States.</p>
 
 <div style="height: 4rem;"></div>
+<a id="partners-a" class="anchor"></a>
 <h2 id="partners">Partners</h2>
 <div class="row d-flex flex-row align-items-center justify-content-center g-5 p-3">
   
@@ -354,6 +297,7 @@
 <div style="height: 4rem;"></div>
 
 <div class="separator rellax" data-rellax-speed="-1" data-rellax-percentage="0.65" style="background-color: #cdedc5; height: 100rem"></div>
+<a id="contacts" class="anchor"></a>
 <h2 id="contact-us">Contact Us</h2>
 
 <h3 class="mt-3">Administration &amp; Finance</h3>
